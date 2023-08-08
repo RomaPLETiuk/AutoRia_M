@@ -1,0 +1,163 @@
+﻿@{
+    ViewData["Title"] = "Головна";
+}
+
+<div style="padding: 10px;"></div>
+@if (User.Identity.IsAuthenticated)
+{
+  <div class="card col-md-12">
+  <div class="card-body">
+            <h5 class="card-title text-center">Ласкаво просимо на сайт Automarket</h5>
+    <p class="card-text">
+       На цьому сайті ви зможете вибрати відповідну для вас модель автомобіля, подивитися його характеристики, порівняти
+       з іншими моделями, а також можете придбати цей автомобіль
+    </p>
+    <p class="card-text"><small class="text-muted">Рома_ПЛЕТЮК</small></p>
+  </div>
+</div>
+
+<div style="padding: 10px;"></div>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  @if (User.IsInRole("Admin"))
+  {
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://images.wallpaperscraft.ru/image/single/mashina_noch_dozhd_143166_1280x720.jpg" class="card-img-top card-image"/>
+        <div class="card-body text-center">
+          <h5 class="card-title">Mercedes</h5>
+             <p class="card-text">Mercedes-Benz - торгова марка та однойменна компанія - виробник легкових автомобілів преміального класу, вантажних автомобілів, автобусів та інших транспортних засобів</p>
+        </div>
+        <div class="card-footer text-center">
+          <a asp-controller="Car" asp-action="GetCars" class="card-link">Список машин</a>
+        </div>
+      </div>
+    </div> 
+  }
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://images.wallpaperscraft.ru/image/single/bmw_fary_avtomobil_124112_1280x720.jpg" class="card-img-top card-image"/>
+      <div class="card-body text-center">
+        <h5 class="card-title">BMW</h5>
+        <p class="card-text">
+          BMW AG — німецький виробник автомобілів, мотоциклів, двигунів, а також велосипедів
+        </p>
+      </div>
+      <div class="card-footer text-center">
+        <a asp-controller="Car" asp-action="GetCars" class="card-link">Список автомобілів</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://images.wallpaperscraft.ru/image/single/audi_avtomobil_vid_speredi_130942_1280x720.jpg" class="card-img-top card-image"/>
+      <div class="card-body text-center">
+        <h5 class="card-title">Audi</h5>
+        <p class="card-text">Audi AG — німецька автомобілебудівна компанія у складі концерну Volkswagen Group, що спеціалізується на випуску автомобілів під маркою Audi</p>
+      </div>
+      <div class="card-footer text-center">
+        <a asp-controller="Car" asp-action="GetCars" class="card-link">Список машин</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="padding: 10px;"></div>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Основні види кузова</h5>
+    <p class="card-text">
+      Тип кузовної конструкції легко визначається на вигляд автомобіля. Для кожного класу характерні відмінні риси,
+       які легко знайти навіть за наявності невеликого досвіду. Крім того, свою роль у класифікації відіграє і спосіб реалізації багажного відділення,
+       яке може бути поєднане з пасажирським салоном або відокремлено від нього
+    </p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+
+<div style="padding: 10px;"></div>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Найбільшим попитом користуються легкові автомобілі з наступними типами кузова</h5>
+  </div>
+  <ul class="list-group list-group-flush" id="ulListId">
+    <li class="list-group-item">Седан — найпоширеніший варіант</li>
+    <li class="list-group-item">Універсал — сімейний автомобіль з великими можливостями</li>
+    <li class="list-group-item">Хетчбек — скорочений варіант універсала</li>
+    <li class="list-group-item">Ліфтбек — поєднання універсала і седана</li>
+    <li class="list-group-item">Купе — автомобіль для шанувальників особистого простору</li>
+    <li class="list-group-item">Лімузин — показовий розкіш</li>
+    <li class="list-group-item">Кабріолет завжди привертає погляди</li>
+    <li class="list-group-item">Позашляховик — підвищена міцність та надійність</li>
+  </ul>
+  <div class="card-body">
+    <button class="btn btn-danger" id="btnHideId">Сховати</button>
+    <button class="btn btn-primary" id="btnShowId">Показати</button>
+  </div>
+</div>
+}
+else
+{
+  <div class="card">
+    <div class="card-header">
+      Ви не авторизовані
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p>Для перегляду ви повині авторизуватися</p>
+      </blockquote>
+    </div>
+  </div>
+  
+  <div style="padding: 10px;"></div>
+  
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="~/img/Bmw_I8.jpg" class="card-img-top" alt="BMW i8">
+        <div class="card-body">
+          <h5 class="card-title text-center">Недоступно</h5>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">BMW i8</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="~/img/Mustang.jpg" class="card-img-top" alt="Mustang">
+        <div class="card-body">
+          <h5 class="card-title text-center">Недоступно</h5>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Mustang</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="~/img/Bmw.jpg" class="card-img-top" alt="BMW">
+        <div class="card-body">
+          <h5 class="card-title text-center">Недоступно</h5>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">BMW</small>
+        </div>
+      </div>
+    </div>
+  </div>
+}
+
+@section pageScripts
+{
+    <script>
+    
+    $('#btnHideId').click(function(){
+      $('#ulListId').hide(2000);
+    });
+    
+    $('#btnShowId').click(function () {
+      $('#ulListId').show(2000);
+    });
+  </script>
+}

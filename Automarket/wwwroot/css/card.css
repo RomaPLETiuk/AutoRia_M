@@ -1,0 +1,87 @@
+﻿.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.card {
+    box-shadow: 4px 2px 2px 3px #c82333;
+}
+
+.card-title {
+    font-family: Impact, serif;
+    font-size: 25px;
+}
+
+.card-buttons-group {
+    text-align: right;
+    padding: 10px;
+}
+
+.card-image {
+    filter: grayscale(1);
+    transition: 1s;
+}
+.card-image:hover {
+    filter: grayscale(0);
+}
+
+/*.card-container {
+    width: 200px;*/ /* Задайте желаемую ширину карточки */
+    /*display: inline-block;*/ /* Для отображения карточек в ряд */
+    /*margin: 10px;*/ /* Добавьте некоторые внешние отступы между карточками */
+/*}*/
+
+/* Стили для .card, .card-title, .card-buttons-group и .card-image остаются такими же */
+/*.card {
+    box-shadow: 4px 2px 2px 3px #c82333;
+}
+
+.card-title {
+    font-family: Impact, serif;
+    font-size: 25px;
+}
+
+.card-buttons-group {
+    text-align: right;
+    padding: 10px;
+}
+
+.card-image {
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+    .card-image:hover {
+        filter: grayscale(0);
+    }*/
+
+/*.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(33.33% - 20px);*/ /* Ширина карточки - 33.33% от родительского контейнера, вычтены отступы */
+    /*margin-bottom: 20px;*/ /* Отступ между карточками */
+    /*box-shadow: 4px 2px 2px 3px #c82333;
+}
+
+.card-title {
+    font-family: Impact, serif;
+    font-size: 25px;
+}
+
+.card-buttons-group {
+    text-align: right;
+    padding: 10px;
+}
+
+.card-image {
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+    .card-image:hover {
+        filter: grayscale(0);
+    }*/
