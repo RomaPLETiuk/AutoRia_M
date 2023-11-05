@@ -3,9 +3,6 @@ Automarket with ASP.NET MVC
 
 Даний проект виконувався для навчальних цілей та не є комерційним.
 
-# Назва проекту
-
-Назва проекту: Autоmarket
 
 ## Опис
 
@@ -25,3 +22,24 @@ Automarket with ASP.NET MVC
 * SQL Server
 * HTML/CSS/JS
 * OOP
+
+# Вікна сайту
+
+## Авторизація:
+ <img src="https://github.com/RomaPLETiuk/AutoRia_M/blob/master/photo/f1.png" title="C#"/>&nbsp;
+
+## Головна сторінка:
+ <img src="https://github.com/RomaPLETiuk/AutoRia_M/blob/master/photo/f2.png" title="C#"/>&nbsp;
+
+## Перегляд авто:
+ <img src="https://github.com/RomaPLETiuk/AutoRia_M/blob/master/photo/f3.png" title="C#"/>&nbsp;
+
+## Порівняння авто:
+ <img src="https://github.com/RomaPLETiuk/AutoRia_M/blob/master/photo/f5.png" title="C#"/>&nbsp;
+ 
+## Форма замовлення:
+ <img src="https://github.com/RomaPLETiuk/AutoRia_M/blob/master/photo/f6.png" title="C#"/>&nbsp;
+
+  ## Адмін панель:
+ <img src="https://github.com/RomaPLETiuk/AutoRia_M/blob/master/photo/f8.png" title="C#"/>&nbsp;
+ 
