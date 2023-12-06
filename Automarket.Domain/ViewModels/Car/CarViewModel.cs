@@ -14,7 +14,7 @@ namespace Automarket.Domain.ViewModels.Car
         public string Name { get; set; }
         
         [Display(Name = "Опис")]
-        [MinLength(50, ErrorMessage = "Рпис має бути більше 50 символів")]
+        [MinLength(50, ErrorMessage = "Опис має бути більше 50 символів")]
         public string Description { get; set; }
         
         [Display(Name = "Модель")]
