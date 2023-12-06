@@ -71,7 +71,7 @@ namespace Automarket.DAL
                     new Car()
                     {
                     Id = 1,
-                    Name = "ITHomester",
+                    Name = "Roma",
                     Description = new string('A', 50),
                     DateCreate = DateTime.Now,
                     Speed = 230,
